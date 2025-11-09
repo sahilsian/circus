@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Golux.Admin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a1e8d0aad62d059ebedd6167282b7430907ef53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db6aa1e13ce6bb976e3c658e05eb5c0e70ad616e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Golux.Admin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Golux.Admin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
