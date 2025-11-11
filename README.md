@@ -4,7 +4,7 @@ Golux is a big one, and is currently in development. The end goal with Golux is 
 
 There are several components to Golux, key ones being:
 
-Golux CMS: A place where users can create applications for data collection, completely in no code. Users can have AI autofill their demands or manually make edits, or both. 
+Golux Core: A place where users can create applications for data collection, completely in no code. Users can have AI autofill their demands or manually make edits, or both. 
 
 *Say you own a car dealership, and you need a platform that lets your employees track inventory, track customers, link customers with vehicles... a lot of stuff*
 
