@@ -1,18 +1,21 @@
-Welcome to Circus, previously Golux
+#Circus - In Development
 
-Circus is a big one, and is currently in development. The end goal with Circus is to let users create complex form systems, completely from no code.
+Circus is an event driven application runtime inspired by ExtJS using React, .NET 10 + SignalR and Redux. 
 
-There are several components to Golux, key ones being:
+##Overview
 
-Circus Core: A place where users can create applications for data collection, completely in no code. Users can have AI autofill their demands or manually make edits, or both. 
+The project aims to reproduce the client–server event flow of legacy ExtJS database applications using modern web technologies. Every UI interaction, system operation, and data transaction is represented as a strongly-typed WebEvent, passed through a centralized EventBus and synchronized with the backend through SignalR. The server remains the only source of truth.
 
-*Say you own a car dealership, and you need a platform that lets your employees track inventory, track customers, link customers with vehicles... a lot of stuff*
+Frontend:
+src/
+  core/
+    models/webEvents/   # Base event models, registry, decorators
+    events/             # All event implementations
+    runtime/            # (Planned) runtime router, orchestrators
+  reducers/system/      # Redux slice + store for SignalR
+  components/ui/        # Reusable UI elements
+  layouts/dashboard/    # Main dashboard window
+  hooks/useSystem.ts    # Wrapper hook for connection control
+  config/runtime.json   # Runtime environment configuration
 
-*Just create your system and deploy it with Circus! Have complete control of who accesses your system and you dont need to pay a development team any dime! everything is built from the ground up, you wire your own system.*
-
-Circus Head: A Circus head is a working client that renders completely from the server. Circus heads are convenient for horizontal scalling, and are completely decoupled from the CMS.
-
-Circus is heavily inspired by legacy systems. Circus uses a dotnet server for its CMS and each head. Golux also uses SignalR as a main communication method from server to heads. Circus uses a collection of React components, with heavy inspiration from Sencha ExtJS.
-
-
-
+Circus can build collaborative applications that require real time communication, and aims to be a core component of a large scale data entry platform creator.
