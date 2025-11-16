@@ -11,7 +11,7 @@ public class AppHub : Hub
 {
     public async Task RecieveEvent(object evt)
     {
-        Console.WriteLine($"[Server] Event received: {evt}");
+        
         var json = JsonSerializer.Serialize(evt);
         var jObj = JsonObject.Parse(json);
         jObj["origin"] = "server";

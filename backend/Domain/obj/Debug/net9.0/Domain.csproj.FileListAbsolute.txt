@@ -1,0 +1,12 @@
+/Users/sahil/Desktop/golux/backend/Domain/bin/Debug/net9.0/Domain.deps.json
+/Users/sahil/Desktop/golux/backend/Domain/bin/Debug/net9.0/Domain.dll
+/Users/sahil/Desktop/golux/backend/Domain/bin/Debug/net9.0/Domain.pdb
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.dll
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/refint/Domain.dll
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/Domain.pdb
+/Users/sahil/Desktop/golux/backend/Domain/obj/Debug/net9.0/ref/Domain.dll

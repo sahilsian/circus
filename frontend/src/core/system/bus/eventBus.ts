@@ -11,7 +11,7 @@ export class EventBus {
     private listeners: Map<string, Listener[]> = new Map();
     private connection: signalR.HubConnection | null = null;
     private buffer: any[] = [];
-
+    private attached:boolean = false;
     attachConnection(conn: signalR.HubConnection) {
         this.connection = conn;
         if (conn.state === signalR.HubConnectionState.Connected && this.buffer.length > 0 ) {
@@ -24,13 +24,17 @@ export class EventBus {
             this.buffer = [];
         }
 
-        conn.on("RecieveEvent", (raw: any) => {
-            console.log("🚌 attach")
-            const cloned = JSON.parse(JSON.stringify(raw));
-            const ctor = getBaseWebEvent(cloned.type);
-            const event = ctor ? Object.assign(new ctor(cloned.payload), cloned) : cloned;
-            this.emit(event);
-        });
+        // Guarded attachment to avoid multiple listeners per connection
+        if(!this.attached) {
+            this.attached = true;
+            conn.on("RecieveEvent", (raw: any) => {
+                const cloned = JSON.parse(JSON.stringify(raw));
+                const ctor = getBaseWebEvent(cloned.type);
+                const event = ctor ? Object.assign(new ctor(cloned.payload), cloned) : cloned;
+                this.emit(event);
+            });
+        }
+
     }
 
     on<T extends baseWebEvent>(type: string, listener: Listener<T>) {

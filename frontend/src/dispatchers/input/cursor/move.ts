@@ -1,2 +1,4 @@
+
+// class DispatcherInputCursorMove implements baseWebDispatcher {
 //
-// const InputCursorMove implements baseWebDispatcher
+// }
